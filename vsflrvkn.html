@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IJSE Contact</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90vh;
+        width: 90vw;
+        padding: 20px;
+        background-color: #4aa4ff;
+        /*background-image: url(*/
+        background-repeat: repeat;
+        background-size: 200px;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow:0 0 10px  rgb(0, 0, 0);
+        transform: translateY(10px);
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .social-icons a {
+        text-decoration: none;
+        color: #333;
+        font-size: 20px;
+    }
+
+    .content {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-info h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .contact-info p {
+        margin-bottom: 5px;
+    }
+
+    .resources {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resources h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .resources ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .resources li {
+        margin-bottom: 5px;
+    }
+
+    .footer {
+        background-color: transparent;
+        border-top: black 1px solid;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .footer p {
+        margin: 0;
+        font-size: 14px;
+    }
+    #Stay-connect-btn{
+        background: #f0f0f0;
+        border: transparent;
+        border-radius: 10px;
+        font-size: 20px;
+
+        width: 10vw;
+        height: 5vh;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        .content {
+            flex-direction: column;
+        }
+
+        .contact-info, .resources {
+            margin-bottom: 20px;
+        }
+    }
+</style>
+<body>
+<div class="container">
+
+    <div class="header">
+        <div class="logo"><button id="Stay-connect-btn">Stay Connect</button></div>
+        <div class="social-icons">
+            <a href="#" target="_blank">❤️<i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank">❤️<i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank">❤️<i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank">❤️<i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank">❤️<i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="contact-info">
+            <h2>PHONE</h2>
+            <p>+94 711 202 202</p>
+
+            <h2>ADDRESS</h2>
+            <p>#50B, Grace Peiris Road, Panadura.</p>
+
+            <h2>E-mail</h2>
+            <p>contactse10@ijse.lk</p>
+        </div>
+
+        <div class="resources">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Guides & tutorials</a></li>
+                <li><a href="#">Help center</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright © 2024 - SE10 - IJSE All Right Reserved</p>
+        <p>Developed by: GDSE 67 of IJSE</p>
+    </div>
+</div>
+<a href="#" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+<script>
+    // Back to top button functionality
+    const backToTopButton = document.querySelector('.back-to-top');
+
+    // Add event listener to show/hide button based on scroll position
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 100) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    // Add event listener to scroll to top when button is clicked
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+</body>
+</html>
