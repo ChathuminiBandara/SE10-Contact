@@ -1,10 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #FE0100;
+        }
+
+        #contact-section::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            inset: 0 0;
+            background-image: url("assets.img/slouths cover.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.1;
+            z-index: -1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            padding: 20px;
+            background-color: #4aa4ff;
+            /*background-image: url(*/
+            margin: auto;
+            border-radius: 10px;
+            box-shadow:0 0 10px  rgb(0, 0, 0);
+            transform: translateY(10px);
+        }
+
+        #contact-section {
+            width: 90%;
+            height: 800px;
+            border-radius: 25px;
+
+            position: absolute;
+            inset: 0 0 0 0;
+            margin: auto;
+            overflow: hidden;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            background-repeat: repeat;
+            background-size: 200px;
+            box-shadow:0 0 10px  rgb(0, 0, 0);
+            transform: translateY(10px);
+
+
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+
+        [name='contact-details'] {
+
+        }
+
+        [name='social-links'] {
+            display: flex;
+            gap: 5px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+
+        }
+
+        .fa-brands {
+            color: var(--primary-color);
+        }
+
+
+        .footer {
+            display: flex;
+            gap: 10vw;
+            background-color: transparent;
+            border-top: black 1px solid ;
+            padding: 10px  0;
+            text-align: center;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+
+
+
 </head>
 <body>
-$END$
+
+
+
+
+<section id="contact-section">
+
+    <div class="header">
+        <!--stay connected button-->
+        <div>
+            <button><div>
+                <h4>STAY CONNECTED</h4>
+            </div></button>
+        </div>
+
+        <!--Social Links-->
+        <div>
+
+            <div name="social-links">
+
+                <a href="" target="_blank">
+                    <i class="fa-brands fa-square-instagram fa 5x "></i>
+                </a>
+                <a href="" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="" target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div name="details">
+
+            <label for="src-links">Resources</label>
+            <ul id="src-links">
+
+                <li><a href="">Blog</a></li>
+                <li><a href="">Guides & tutorials</a></li>
+                <li><a href="">Help center</a></li>
+            </ul>
+        </div>
+
+
+    <!--footer-->
+    <div class="footer">
+
+        <p>Copyright © 2024 - SE10 - IJSE All Right Reserved</p>
+        <p>Developed by: GDSE 67 of IJSE</p>
+    </div>
+
+
+</section>
+
+<!--<section>
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+</section>-->
+
 </body>
 </html>
